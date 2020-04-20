@@ -12,6 +12,7 @@ pipeline {
                 stash(name: 'compiled-results', includes: 'sources/*.py*')
             }
         }
+<<<<<<< HEAD
         stage('Test') {
             agent {
                 docker {
@@ -46,5 +47,7 @@ pipeline {
                 }
             }
         }
+=======
+>>>>>>> 8b80d91444fc65d8f511bdd9a1519422eb293d83
     }
 }
